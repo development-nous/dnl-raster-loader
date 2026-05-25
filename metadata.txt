@@ -1,0 +1,19 @@
+[general]
+name=DNL Raster Loader
+qgisMinimumVersion=3.16
+description=Load raster tiles from MinIO by selecting footprint features in a registered raster_dataset layer
+version=1.0.0
+author=Development Nous Ltd
+email=gis@developmentnous.nz
+about=Adds a toolbar button that loads raster images from MinIO for selected tile footprint features.
+    The active layer must be registered in the raster_dataset PostGIS table and must have a valid uri field.
+    Select up to 10 tiles then click the button to load them as raster layers.
+tracker=https://github.com/developmentnous/dnl-raster-loader/issues
+repository=https://github.com/developmentnous/dnl-raster-loader
+hasProcessingProvider=no
+tags=raster,lidar,minio,tiles,dnl
+homepage=https://developmentnous.nz
+category=Raster
+icon=icon.png
+experimental=False
+deprecated=False
