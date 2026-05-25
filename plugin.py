@@ -1,17 +1,13 @@
 import os
-#  import psycopg2
 from qgis.PyQt.QtWidgets import QAction, QMessageBox
 from qgis.PyQt.QtGui import QIcon
-#  from qgis.PyQt.QtCore import Qt
 from qgis.core import (
     QgsVectorLayer,
     QgsRasterLayer,
     QgsProject,
     QgsDataSourceUri,
-    #  QgsProviderRegistry,
     Qgis,
 )
-#  from qgis.utils import iface as qgis_iface
 
 MAX_TILES = 25
 
@@ -102,10 +98,6 @@ class DNLRasterLoader:
                 error = tmp.dataProvider().error().message() if tmp.dataProvider() else "no provider"
                 self._push(f"Registry invalid: {error}", Qgis.Warning)
                 self._push(f"URI was: {query_uri.uri(False)}", Qgis.Warning)
-                #  self._push(
-                    #  "Could not connect to raster_dataset registry.",
-                    #  Qgis.Warning
-                #  )
                 return set()
 
             return {f["table_name"] for f in tmp.getFeatures()}
@@ -124,7 +116,6 @@ class DNLRasterLoader:
         try:
             registered_tables = self._get_registered_tables(layer)
             uri = QgsDataSourceUri(layer.dataProvider().dataSourceUri())
-            #  self.iface.messageBar().pushMessage("Raster Loader", f"Table is: '{uri.table()}'\nCompare:  '{registered_tables}'")
             if uri.table() not in registered_tables:
                 self._push(
                     f"Layer '{layer.name()}' is not registered in {RASTER_DATASET_TABLE}.",
