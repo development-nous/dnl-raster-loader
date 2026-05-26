@@ -47,7 +47,7 @@ tile becomes a separate raster layer).
 # How to Install
 
 Download and save the zip file `dnl-raster-loader.zip` somewhere on your local
-machine. In QGIS, go to `Plugins` 🠊 `Manage and Install Plugins…`. In the
+machine. In QGIS, go to the menu `Plugins` 🠊 `Manage and Install Plugins…`. In the
 **Plugins | All** box, click `Install from ZIP` on the left panel and in the
 **Zip file** text box enter or click the browse (`...`) button to navigate to
 wherever you saved the attached zip file. Once it is entered, click the `Install
