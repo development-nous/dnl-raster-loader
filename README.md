@@ -63,12 +63,12 @@ Then connect to the PostgreSQL database `geodb_nz` and under the
 
 Once the layer is added, click on it and use a selector tool to select up to 25
 tiles. After selecting the tiles, navigate to the plugin on the menu: `Raster`
-🠊 `DNL Raster Loader` 🠊  ![icon](./res/icons/icon.png) `Load Selected Raster
+🠊 `DNL Raster Loader` 🠊  ![icon](./res/icons/icon_small.png) `Load Selected Raster
 files` or make sure the raster toolbar is visible and look for
-![icon](.res/icons/icon.png).
+![icon](./res/icons/icon_small.png).
 
 Click the button and
-    ... wait a bit ... 
+    ... wait a bit ...
         ... then the raster tiles will appear one by one after a message that
 the tiles have been loaded pops up. The raster images will be listed in the
 Layers panel above the vector tile metadata layer.
