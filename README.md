@@ -31,7 +31,7 @@
 # Table of Contents
 
 - [Documentation](#documentation)
-- [How to Install](#how-to-insdtall)
+- [How to Install](#how-to-install)
 
 # Documentation
 
@@ -41,7 +41,8 @@ footprint features.
 The active layer must be registered in the `__attributes.raster_dataset` PostGIS
 table and must have a valid `uri` field.
 
-Select up to 25 tiles then click the button to load them as raster layers.
+Select up to 25 tiles then click the button to load them as raster layers (each
+tile becomes a separate raster layer).
 
 # How to Install
 
