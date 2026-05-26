@@ -72,3 +72,5 @@ Click the button and
         ... then the raster tiles will appear one by one after a message that
 the tiles have been loaded pops up. The raster images will be listed in the
 Layers panel above the vector tile metadata layer.
+
+![Selecting the Tiles](./res/images/selecting-the-tiles.png)
